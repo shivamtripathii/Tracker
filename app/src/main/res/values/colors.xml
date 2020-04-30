@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#3A99E4</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="skyblue">#BFDFEC</color>
+    <color name="grey">#696969</color>
+    <color name="warning">#FF9800</color>
+    <color name="danger">#CA0B00</color>
+    <color name="recovered">#0D850D</color>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tracker19</string>
+    <string name="stay_home_stay_safe"><![CDATA[STAY HOME & STAY SAFE]]></string>
+    <string name="loading">loading...</string>
+</resources>
