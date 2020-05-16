@@ -9,13 +9,15 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
         app:lottie_autoPlay="true"
         app:lottie_fileName="person.json"
         app:lottie_loop="true" />
@@ -30,7 +32,7 @@
         android:layout_marginBottom="60dp"
         android:onClick="startTrackActivity"
         android:textColor="@color/black"
-        android:text="Let's Track"
+        android:text="Let's Track MORE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -50,20 +52,51 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/desc"
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/buttonstyle"
         android:fontFamily="@font/roboto"
-        android:text="Realtime Tracker - Using Data from multiple official sources"
-        android:textAlignment="center"
-        android:textColor="#696969"
-        android:textSize="12dp"
+        android:onClick="startTrackActivityWrold"
+        android:text="Let's Track World"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/buttonstyle"
+        android:fontFamily="@font/roboto"
+        android:onClick="startTrackActivityMap"
+        android:text="LETS TRACK MAPS"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/buttonstyle"
+        android:fontFamily="@font/roboto"
+        android:onClick="startTrackActivityIndia"
+        android:text="Let's Track India"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/instructionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

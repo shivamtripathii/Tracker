@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -129,6 +130,7 @@ class CovidTrackHome : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener
         api.getGlobal().enqueue(object : Callback<GlobalModel> {
             override fun onResponse(call: Call<GlobalModel>, response: Response<GlobalModel>) {
                 if (response.isSuccessful) {
+                    Log.d("myvalue1",response.body().toString())
                     setValue(response.body())
                 }
                 loader.smoothToHide()
@@ -198,6 +200,7 @@ class CovidTrackHome : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener
         api.getIndia().enqueue(object : Callback<IndiaCountry> {
             override fun onResponse(call: Call<IndiaCountry>, response: Response<IndiaCountry>) {
                 if (response.isSuccessful) {
+                    Log.d("myvalue",response.body().toString())
                     response.body()?.let { setValueCountry(it) }
                 }
                 loader.smoothToHide()
@@ -261,8 +264,12 @@ class CovidTrackHome : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener
 
 
     fun search(view: View) {
-        setSearchInfo(0)
-        startActivity(Intent(this, SearchActivity::class.java))
+        /*setSearchInfo(0)
+        startActivity(Intent(this, SearchActivity::class.java))*/
+        val intent = Intent(this,CovidWeb::class.java)
+        intent.putExtra("key",2)
+        startActivity(intent)
+        finish()
     }
 
     fun searchState(view: View) {

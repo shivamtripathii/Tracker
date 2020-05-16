@@ -11,9 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.noprofit.tracker19.Screens.SearchActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name="com.noprofit.tracker19.Screens.CovidTrackHome" android:screenOrientation="portrait"></activity>
-        <activity android:name="com.noprofit.tracker19.Screens.SplashScreen" android:screenOrientation="portrait">
+        <activity android:name=".Screens.CovidWeb" />
+        <activity
+            android:name=".Screens.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.CovidTrackHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.SplashScreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
